@@ -1,0 +1,723 @@
+/*  GENERAL STYLES
+*
+*/* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-weight: 500;
+}
+
+html, body,ul,li,p,h1,h2,h4,h3,h5,h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  display: block;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header start */
+
+div .logo {
+    color:#fff;  
+}
+
+div .logo span {
+    color: rgb(75, 202, 255);
+}
+
+header {
+  top:0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 9;
+  width: 100%; 
+  left: 0;
+  background: rgb(89, 103, 111);
+  opacity: 0.8; 
+  right: 0;
+  position: fixed;
+}
+
+header a {
+  padding: 8px 16px;
+  color: #fff; 
+  text-decoration: none; 
+  letter-spacing: 0px; 
+}
+
+header a:hover { 
+  color: rgb(75, 202, 255); 
+  border: 2px solid rgb(75, 202, 255);
+  padding: 6px 14px;
+  text-decoration: none;
+}
+
+/* Header end */
+
+/* Hero start */
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 650px;
+}
+
+.hero div {
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+.hero h1 {
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-size: 30px;
+    background-color: rgb(83,103,111);
+    padding: 7px 10px;
+    color: rgb(255,255,255);
+    opacity: 0.8; 
+  }
+
+/* Hero end */
+
+/* Services start */
+
+section.SERVICES h2 {
+  color: #fff;
+  font-weight:normal;
+  padding-top: 40px;
+  margin-bottom: 30px; 
+}
+
+section.SERVICES h2 span {
+  text-decoration:none;
+  border-bottom: 2px solid white;
+}
+
+section.SERVICES{
+background-color: rgb(75, 202, 255)
+}
+
+section.SERVICES .image {
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+section.SERVICES .name{
+  font-size: 24px;
+  margin-bottom: 22px;
+  color: #fff; 
+}
+
+section.SERVICES .name h5{
+  font-weight: normal; 
+  font-size: 19px;
+}
+
+section.SERVICES .position { 
+  margin-bottom: 20px;
+}
+
+section .SERVICES p{
+  font-size: 12px;
+  margin-bottom: 40px;
+  color:#fff;
+  margin-right: 30px; 
+
+}
+
+/* Services end */
+
+/* Portfolio start */
+
+.portfolio h2 {
+  color: gray;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.portfolio h2 span {
+  border-bottom: 2px solid gray;
+}
+
+.portfolio-meniu a {
+  color: gray;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.portfolio-meniu a:hover {
+  color: rgb(75, 202, 255);
+  border: 2px solid rgb(75, 202, 255);
+  padding: 6px 14px;
+}
+
+.pictures li{
+  height: 270px;
+  width: 270px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pictures  {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(83,103,111,0.8);
+  display: none;
+}
+
+.pictures li:hover .foto {
+  display: block;
+}
+
+.text {
+  color: rgba(255,255,255,0.3);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40%;
+}
+
+/* Portfolio end */
+
+/* Video start */
+
+.video {
+	padding-top: 60px;
+	width: 100%;
+	background: #515f67;
+	min-height: 380px;
+  color: #fff;
+  padding-left: 40px;
+}
+
+.video p {
+	font-family: Segoe UI, sans-serif;
+  font-size: 14px;
+  width: 500px;
+  margin-top: 30px;
+}
+
+.just span {
+  border-bottom: 2px solid white;
+}
+
+.just{
+  width:350px;
+}
+
+.video .button {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #353f46;
+	text-align: center;
+	font-family: Segoe UI, sans-serif;
+	font-size: 14px;
+	width: 140px;
+	height: 36px;
+	vertical-align: middle;
+	line-height: 36px;
+	box-sizing: border-box;
+  border: 2px solid #353f46;
+  margin-top: 30px;
+}
+
+.video .button:hover {
+	color: #4bcaff;
+  border-color: #4bcaff;
+}
+
+iframe {
+  width: 600px;
+  margin-left: 30%;
+  padding: 5% 5%;
+}
+
+/*Video end*/
+
+/* Twitter start*/
+
+.twitter {
+	width: 100%;
+	min-height: 280px;
+	background: #4bcaff;
+	color: #fff;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.twitter h2 span {
+  border-bottom: 2px solid white;
+}
+
+.twitter p {
+	margin-top: 35px;
+  font-size: 24px;
+}
+
+.twitter i {
+ font-size: 30px;
+ display: flex;
+ justify-content: right;
+ margin-left: 75%;
+}
+
+/* Twitter end */
+
+/* who is Start */
+
+.who-is {
+	width: 100%;
+	min-height: 450px;
+	color: #fff;
+	padding-top: 60px;
+}
+
+.who-is h2 {
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+
+.who-is h2 span {
+border-bottom: 2px solid white;
+}
+
+.who-is .row{
+  font-size: 14px; 
+}
+
+.who-is ul {
+  column-width: 400px;
+  column-count: 2;
+  position: relative;
+}
+
+.who-is li{
+  margin-top:10px; 
+  display: inline-block;
+}
+
+.who-is p {
+margin: 20px;
+}
+
+.social {
+	width: 100%;
+}
+
+.who-is .box {
+	text-align: center;
+	width: 64px;
+	height: 64px;
+	border: 2px solid #fff;
+	display: inline-block;
+	margin-right: 20px;
+	box-sizing: border-box;	
+}
+
+.who-is .box:hover {
+	border-color: #4bcaff;
+	color: #4bcaff;
+}
+
+.who-is .box i {
+	font-size: 30px;
+	line-height: 60px;
+}
+
+.who-is .social {
+  padding-left: 20px;
+}
+
+/* Who is end */
+
+/* Testimonial start */
+
+.testimonials {
+	width: 100%;
+	min-height: 360px;
+	background: #fff;
+	color: #515f67;
+  padding-top: 60px;	
+  padding-left: 35px; 
+}
+
+.testimonials h3{
+  width:250px;
+}
+
+.testimonials .heading {	
+  font-size: 30px;
+}
+
+.testimonials .heading span {
+  border-bottom: 2px solid  #515f67;
+}
+
+.testimonials .quote {
+	font-size: 25px;
+  margin-top: 35px;
+}
+
+.testimonials .quote .bottom {
+	font-size: 14px;
+	color: #4bcaff;
+	font-weight: bold;
+}
+
+.testimonials i {
+	font-size: 28px;
+  margin-left: 69%;
+}
+
+/* Testimonial end */
+
+/* Contact start */
+
+.contact {
+	min-height: 815px;
+	color: #fff;
+	padding-top: 80px;
+}
+
+.contact h2 span {
+  border-bottom: 2px solid white;
+}
+
+.contact input, textarea {
+	color: #fff;
+	padding: 10px;
+}
+
+.contact input:focus, textarea:focus {
+	border-color: #4bcaff;
+	outline: none;
+}
+
+.input {
+	height: 60px;
+	width: 100%;
+	border: 2px solid #fff;
+	background: none;
+}
+
+.message {
+	height: 220px;
+	width: 100%;
+	margin-bottom: 40px
+}
+
+.contact .title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 40px 0 10px 0;
+}
+
+.contactone {
+	margin-top: 95px;
+}
+
+.contact address {
+	margin-top: 29px;
+}
+
+.box {
+	width: 100%;
+}
+
+.contact .button {
+	display: inline-block;
+	height: 60px;
+	width: 370px;
+	background: #4bcaff;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	font-family: Segoe UI, sans-serif;
+	vertical-align: middle;
+	line-height: 60px;
+	box-sizing: border-box;
+}
+
+/* Contact end */
+
+/* Footer start */
+
+.footer {
+	min-height: 100px;
+	background: #353f47;
+	color: #515f67;
+	line-height: 100px;
+}
+
+.footer ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.footer li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bolder;
+	position: relative;
+	padding: 0 5px;
+}
+
+.footer a {
+	color: #4a575f;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #fff;
+}
+
+.footer .box {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 12px;
+  padding-left: 700px;
+}
+
+/* Footer end */
+
+/* Media Query */
+
+@media(max-width:768px){
+  
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    padding-top: 20px;
+    padding-bottom:20px;
+  }
+
+  .SERVICES .container{
+    padding-left: 7%;
+  }
+  
+  .pictures li{
+    height: 160px;
+    width: 160px;
+    margin: 8px;
+  }
+  
+  .contact .button{
+    margin-bottom: 30px;
+  }
+
+  .testimonials .container{
+    padding-left: 5%;
+  }
+
+  .testimonials .fa{
+    margin-left: 50%;
+  }
+
+  .twitter .container{
+    padding-left: 3%;
+  }
+
+  .twitter .fa{
+    margin-left: 60%; 
+  }
+
+  .who-is .container{
+    padding-left: 7%;
+  }
+
+  .who-is .social{
+    margin-left: 30%; 
+    padding-bottom: 40px;
+    width:500px;
+  }
+
+  .video h3{
+  width:400px;
+  }
+
+  .video a{
+    margin-bottom: 30px;
+  }
+
+  .video p{
+    width:350px;
+  }
+
+  iframe {
+    width: 300px;
+    padding: 0px 0px 40px 0px;
+    margin-left: 120px;
+  }
+  
+  .footer .box {
+    padding-left: 200px;
+  }
+
+  .footer ul{
+    margin-left: 50px;
+  }
+
+}
+
+ /* MEDIA 480px */
+
+@media(max-width:480px){
+
+.flex-container {
+  flex-direction: column;
+ }
+
+ header {
+   padding-top: 40px;
+   padding-bottom: 5px;
+ }
+
+ header li{
+   margin:-8px;
+   font-size: 14px;
+ }
+
+ header a:hover{
+   border:none;
+   padding: 8px 16px ;  
+ }
+
+ header h2 {
+   font-size: 25px;
+   margin: -40px;
+ } 
+
+header .logo + nav {
+  display: none;
+}
+
+header:hover .logo + nav {
+  display: block;
+}
+
+.SERVICES li{
+  width: 400px;
+}
+
+.SERVICES ul{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.video p{
+  width: 400px;
+}
+
+iframe {
+  width: 80%;
+  margin:0px;
+  padding-bottom: 20px;
+}
+
+.testimonials .fa{
+  margin-left: 20%;
+}
+
+.twitter .fa{
+  margin-left: 40%;
+}
+
+.twitter p { 
+  font-size: 20px;
+}
+
+.portfolio h2{
+  font-size: 25px;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+.portfolio-meniu li{
+  margin:-8px;
+  font-size: 14px;
+}
+
+.portfolio-meniu a:hover{
+  border:none;
+  padding: 8px 16px ;
+}
+
+.pictures li{
+  height: 200px;
+  width: 200px;
+  margin: 8px;
+}
+
+.who-is .social{
+ margin-left: 30px;
+  width:500px;
+}
+
+.testimonials p{
+  font-size: 20px;
+}
+
+.contact .button{
+  margin-left: 7%;
+}
+
+.footer li{
+  font-size: 5px;
+}
+
+.footer ul{
+  margin-left: 20px; 
+}
+
+.footer .box {
+ padding-left: 20px;
+}
+
+}
